@@ -1,0 +1,47 @@
+.Section-contact{
+    margin-top: 14%;
+    background-color: aqua;
+    border-radius: 10px;
+
+
+}
+
+.contact{
+    display: flex;
+    color: white;
+    font-weight: bold;
+    justify-content: center;
+
+}
+.Contact-section{
+    display: flex;
+    
+}
+
+
+.form-group {
+            display: flex;
+            margin-bottom: 20px;
+            position: relative;
+            justify-content: right;
+            right: 12%;
+            border-radius: 10px;
+            background-color: black;
+            
+        }
+.Arealtext {
+            position: relative;
+            justify-content: left;
+            left: 68%;
+            border-radius: 10px;
+}
+
+.Areabutton{
+            position: relative;
+            justify-content: left;
+            left: 68%;
+            padding: 8px 20px;
+            border-radius: 10px;
+            background-color: purple;
+            color: white;
+}

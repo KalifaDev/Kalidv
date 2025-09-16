@@ -1,0 +1,80 @@
+nav{
+    background: linear-gradient(to right,blue,purple);
+}
+
+.photomain {
+     background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)), url('8gd7ty4e.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+           
+}
+
+.titre{
+    font-size: 2.5rem;
+    font-weight: bold;
+    animation: fadelOut 10s infinite;
+    margin: 30;
+    text-align: left;
+    font-size: xx-large;
+}
+
+.conte{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100hv;
+    background: #121212;
+    border-radius: 10px;
+    animation: fadeIn 1.0s ease-in-out;
+    margin-top: 20px;
+            
+        }
+         @keyframes fadeIn {
+            from { opacity: 5; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+.Container {
+            position: relative;
+            z-index: 2;
+            background-color: rgba(255, 255, 255, 0.9);
+            background:  url('image.jpg');
+            border-radius: 10px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 400px;
+            padding: 200px;
+            margin: 20px;
+            
+        
+}
+.Portfolio{
+    flex: 1;
+    display: flex;
+    background: linear-gradient(blue,rgb(212, 148, 212));
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 50px;
+    border-radius: 10px;  
+    font-size: xx-large;
+    animation: fadeIn 1.0s ease-in-out;
+    
+            
+        }
+         @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(1px); }
+        }
+
+@keyframes fadelOut{
+    0% {opacity: 0; transform: translateX(-20px);}
+    25% {opacity: 1; transform: translateX(0);}
+    75% {opacity: 1; transform: translateX(0);}
+    100% {opacity: 0; transform: translateX(20px);}
+}
+.decript{
+    color: black;
+    font-size: large;
+    
+}
