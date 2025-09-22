@@ -1,13 +1,31 @@
 nav{
     background: linear-gradient(to right,blue,purple);
+    
+    
+}
+.container-fluid img{
+    height: 40px;
+    width: auto;
 }
 
+.navbar-nav .nav-link {
+    color: white !important;
+    font-family: sans-serif;
+    transition: 0.3s;
+}
+.navbar-nav .nav-link:hover{
+    color: blueviolet;
+    background-color: #1abc9c ;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
 .photomain {
      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)), url('8gd7ty4e.png');
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
             color: white;
+            margin-top: 40px;
            
 }
 
@@ -39,7 +57,7 @@ nav{
             position: relative;
             z-index: 2;
             background-color: rgba(255, 255, 255, 0.9);
-            background:  url('image.jpg');
+            background:  url('IMG_1843.JPG');
             border-radius: 10px;
             box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
             width: 100%;
@@ -47,19 +65,37 @@ nav{
             padding: 200px;
             margin: 20px;
             
+            transition: all 0.3s ease;
+  }
         
-}
+        .Container:hover {
+            transform: translateY(-2px) scale(1.05);
+            
+        }
+
+
+
+
+
+
+
 .Portfolio{
     flex: 1;
     display: flex;
     background: linear-gradient(blue,rgb(212, 148, 212));
     flex-direction: column;
-    justify-content: space-between;
     padding: 50px;
+    margin: 1%;
     border-radius: 10px;  
-    font-size: xx-large;
-    animation: fadeIn 1.0s ease-in-out;
     
+   
+    /* animation: fadeIn 1.0s ease-in-out; */
+    
+        transition: all 0.3s ease;
+  }
+        
+        .Portfolio:hover {
+            transform: translateY(-1px) scale(1.01);
             
         }
          @keyframes fadeIn {
@@ -73,6 +109,7 @@ nav{
     75% {opacity: 1; transform: translateX(0);}
     100% {opacity: 0; transform: translateX(20px);}
 }
+
 .decript{
     color: black;
     font-size: large;

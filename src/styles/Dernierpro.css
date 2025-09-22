@@ -27,7 +27,7 @@
     object-fit: cover;
     border-radius: 10px;
     border: 2px solid white;
-
+    
 }
 .Service{
      text-align: center;
@@ -70,21 +70,21 @@
     outline: 3PX solid white;
     cursor: pointer;
     transition: 0.10s ease;
-    transform: translateY(-3px);
+    transform: translateY(-2px) scale(1.05);
 }
 .Button-plus {
     border-radius: 10px;
-    background-color: transparent;
+    background-color: purple;
     color: white;
     padding: 8px 20px;
     font-weight: bold;
-    border: 2px solid white;
-    cursor: pointer;
+    border: 2px solid rgb(255, 230, 255);
     transform: all 0.3s ease;
     
-}
-.Button-plus:hover{
-    background: blue;
-    box-shadow: 0 4px 15px rgba(78, 158, 255, 0.4);
-    transform: translateY(3px);
-}
+  }
+        
+        .Button-plus:hover {
+            background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+            transform: translateY(-2px) scale(1.05);
+            box-shadow: 0 10px 25px rgba(52, 152, 219, 0.3);
+        }

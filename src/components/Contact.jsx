@@ -3,44 +3,49 @@ import "../styles/Contact.css"
 
 export default function Contact() {
 
+        
   
     return(
-        <section className="Section-contact">
+        <section className="Section-contact" id="contact">
             <div>
-                <h1 className="contact">Contact</h1>
+                <h1 className="contact"><i class="fa-solid fa-envelope" style={{paddingRight :"10px", fontSize:"80%",marginTop:"8px"}}></i>Contact</h1>
+                
                     <div className="Contact-section"> 
-                         <div className="Message">
-                            <div><div className="email">Email : Kalifacamara001@mail.com</div>
-                              <div className="form-group">
-                        
-                                    <input style={{width: "20%"}} type="text" id="fullName" name="fullName" placeholder="Votre nom complet" required ></input>
-                            <div className="error-message" id="nameError"></div>
-                    </div>
-                         </div>
-                    </div>
-                
-               
 
+<div class="wrapper">
+    
+    <div className="container">
+      
+      <div className="email">Email : <a href="mailto:kalifacamara0001@gmail.com">kalifacamara0001@gmail.com</a> </div>
+                              
+         <div>Téléphone : <a href="tel:+22372128364">+223 72 12 83 64</a></div>
+         <div>Adress : <a href="Nigeria (Kaduna) Tundu_Wada"> Nigeria (Kaduna) Tundu_Wada</a> </div>
+         <i class="fa-brands fa-instagram" style={{paddingRight :"10px", fontSize:"200%",marginTop:"15px"}}></i><br/>
+         <i class="fa-brands fa-whatsapp" style={{paddingRight :"10px", fontSize:"200%",marginTop:"15px"}}></i><br/>
+         <i class="fa-brands fa-tiktok" style={{paddingRight :"10px", fontSize:"200%",marginTop:"15px"}}></i><br/>
+         <i class="fa-brands fa-facebook" style={{paddingRight :"10px", fontSize:"200%",marginTop:"15px"}}></i><br/>
+         
+    </div>
+ 
+   
+    <div className="container">
+      
+       <form class="form-row">
+        <input type="text" placeholder="Nom" required></input>
+        <input type="text" placeholder="Prénom" required></input>
+      </form>
+      <input type="email" placeholder="Email" required style={{ width: "100%",marginTop:"5%"}}></input>
+        <div className="error-message" id="nameError"></div >
 
-
-
-
-
-                
-                 <div>Tell : +223 72128364</div>
-                    <div className="form-group">
-                        
-                        <input style={{width: "20%"}} type="Email" id="compteEmail" name="compteEmail" placeholder="Votre Email " required ></input>
-                            <div className="error-message" id="nameError"></div>
-                    </div>
-                        <main >
-                            <div>Adress : Nigeria (Kaduna) Tundu_Wada</div>
-                            <textarea className="Arealtext"  style={{ width: "20%", height: "100px", marginBottom: "10px" }} placeholder="Ecrire vos message ici" required ></textarea> 
+             <textarea className="Arealtext"  style={{ width: "100%", height: "100px", marginBottom: "10px", marginTop:"5%"}} placeholder="Ecrire vos message ici" required ></textarea> 
                                 <br />
-                                <button  className="Areabutton" type="submit">Envoyer</button>
-                        </main>
-                </div>
-                <div style={{textAlign : "center", background : "#3333", marginTop:"15px"}}>Develloper par Kalifa_dev</div>
+            <button  className="Areabutton" type="submit"><i class="fa-solid fa-paper-plane" style={{paddingRight :"10px", fontSize:"80%",marginTop:"8px"}}></i>Envoyer</button>
+        </div>
+    </div>
+  </div>
+                        
+                           
+                <div style={{textAlign : "center", background : "#333",color:"InactiveBorder", marginTop:"15px"}}>Develloper par Kalifa_dev <span  >&copy; 2025</span></div>
             </div>
                 
 
