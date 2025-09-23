@@ -10,18 +10,18 @@ export default function Header(){
       <div className="collapse navbar-collapse " id="navbarSupportedContent" >
         <ul className="navbar-nav mx-auto me-auto mb-2 mb-lg-0 ">
          <li className="nav-item ">
-           <a className="nav-link " aria-current="page" href="#home" vrole="button" > <i class="bi bi-house-door-fill" style={{paddingRight :"5px"}}></i>Home</a>
+           <a className="nav-link " aria-current="page" href="#home" vrole="button" > <i className="bi bi-house-door-fill" style={{paddingRight :"5px"}}></i>Home</a>
           </li>
          <li className="nav-item">
-            <a className="nav-link" href="#apropos" role="button"> <i class="bi bi-file-person-fill" style={{paddingRight :"5px"}}></i> A propos</a>
+            <a className="nav-link" href="#apropos" role="button"> <i className="bi bi-file-person-fill" style={{paddingRight :"5px"}}></i> A propos</a>
          </li>
           <li className="nav-item">
-            <a className="nav-link " href="#service" role="button"> <i class="bi bi-person-workspace"style={{paddingRight :"5px"}}></i> Service</a>
+            <a className="nav-link " href="#service" role="button"> <i className="bi bi-person-workspace"style={{paddingRight :"5px"}}></i> Service</a>
           
             
           </li>
           <li className="nav-item">
-            <a className="nav-link " href="#contact" role="button"> <i class="bi bi-telephone-fill" style={{paddingRight :"5px"}}></i> Contact</a>
+            <a className="nav-link " href="#contact" role="button"> <i className="bi bi-telephone-fill" style={{paddingRight :"5px"}}></i> Contact</a>
           </li>
         </ul>
             

@@ -7,7 +7,7 @@ function Panier(){
         <section>
              <div className="introimage"></div>
         <div className="Intro">
-            <h1 style={{fontSize:"50px", fontWeight:"bold",}} className="textintro">A <h2 style={{fontSize:"50px", fontWeight:"bold",color:"blue"}} id="apropos">propos</h2> </h1>
+            <h1 style={{fontSize:"50px", fontWeight:"bold",}} className="textintro" id="apropos">A propos </h1>
             <p className="kali">Kalifa (DEV), j'e construit des applicationqui allient desingn, performance et inovation.
               <br/>j'aime consevoir des interfaces simple mais efficaces.<br/>Bienvenue dans mon univers numerique</p>
            

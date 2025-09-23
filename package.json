@@ -8,10 +8,14 @@
     "start": "next start"
   },
   "dependencies": {
+    "@prisma/client": "^6.16.2",
     "bootstrap": "^5.3.7",
     "bootstrap-icons": "^1.13.1",
     "next": "15.5.0",
     "react": "19.1.0",
     "react-dom": "19.1.0"
+  },
+  "devDependencies": {
+    "prisma": "^6.16.2"
   }
 }

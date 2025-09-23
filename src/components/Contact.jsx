@@ -1,5 +1,7 @@
 "use client";
 import "../styles/Contact.css"
+// import ContactForm from './ContactForm'
+import ContactForm from "@/components/ContactForm"
 
 export default function Contact() {
 
@@ -27,10 +29,10 @@ export default function Contact() {
          
     </div>
  
-   
-    <div className="container">
-      
-       <form class="form-row">
+            
+         <div className="container">
+      <ContactForm />
+        {/* <form class="form-row">
         <input type="text" placeholder="Nom" required></input>
         <input type="text" placeholder="Prénom" required></input>
       </form>
@@ -38,9 +40,9 @@ export default function Contact() {
         <div className="error-message" id="nameError"></div >
 
              <textarea className="Arealtext"  style={{ width: "100%", height: "100px", marginBottom: "10px", marginTop:"5%"}} placeholder="Ecrire vos message ici" required ></textarea> 
-                                <br />
-            <button  className="Areabutton" type="submit"><i class="fa-solid fa-paper-plane" style={{paddingRight :"10px", fontSize:"80%",marginTop:"8px"}}></i>Envoyer</button>
-        </div>
+                                <br /> */}
+            {/* <button  className="Areabutton" type="submit"><i class="fa-solid fa-paper-plane" style={{paddingRight :"10px", fontSize:"80%",marginTop:"8px"}}></i>Envoyer</button>  */}
+        </div> 
     </div>
   </div>
                         
