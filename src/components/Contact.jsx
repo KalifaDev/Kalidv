@@ -32,16 +32,7 @@ export default function Contact() {
             
          <div className="container">
       <ContactForm />
-        {/* <form class="form-row">
-        <input type="text" placeholder="Nom" required></input>
-        <input type="text" placeholder="Prénom" required></input>
-      </form>
-      <input type="email" placeholder="Email" required style={{ width: "100%",marginTop:"5%"}}></input>
-        <div className="error-message" id="nameError"></div >
-
-             <textarea className="Arealtext"  style={{ width: "100%", height: "100px", marginBottom: "10px", marginTop:"5%"}} placeholder="Ecrire vos message ici" required ></textarea> 
-                                <br /> */}
-            {/* <button  className="Areabutton" type="submit"><i class="fa-solid fa-paper-plane" style={{paddingRight :"10px", fontSize:"80%",marginTop:"8px"}}></i>Envoyer</button>  */}
+       
         </div> 
     </div>
   </div>
