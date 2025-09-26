@@ -5,3 +5,30 @@ body{
     background-color: #0d1117;
     
 }
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;       /* prend toute la largeur */
+  min-height: 100vh; /* prend toute la hauteur de l'écran */
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;   /* limite sur grand écran */
+  margin: 0 auto;
+  padding: 0 1rem;     /* marge interne fluide */
+}
+
+img, video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}

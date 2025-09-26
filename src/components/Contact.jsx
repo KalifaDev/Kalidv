@@ -1,11 +1,14 @@
 "use client";
+import { useEffect, useInsertionEffect } from "react";
 import "../styles/Contact.css"
 // import ContactForm from './ContactForm'
 import ContactForm from "@/components/ContactForm"
-
+import ContactWatsapp from "@/components/ContactWatsapp"
 export default function Contact() {
 
-        
+        // useEffect() => {
+
+        // }
   
     return(
         <section className="Section-contact" id="contact">
@@ -22,17 +25,17 @@ export default function Contact() {
                               
          <div>Téléphone : <a href="tel:+22372128364">+223 72 12 83 64</a></div>
          <div>Adress : <a href="Nigeria (Kaduna) Tundu_Wada"> Nigeria (Kaduna) Tundu_Wada</a> </div>
-         <i class="fa-brands fa-instagram" style={{paddingRight :"10px", fontSize:"200%",marginTop:"15px"}}></i><br/>
-         <i class="fa-brands fa-whatsapp" style={{paddingRight :"10px", fontSize:"200%",marginTop:"15px"}}></i><br/>
-         <i class="fa-brands fa-tiktok" style={{paddingRight :"10px", fontSize:"200%",marginTop:"15px"}}></i><br/>
-         <i class="fa-brands fa-facebook" style={{paddingRight :"10px", fontSize:"200%",marginTop:"15px"}}></i><br/>
-         
+         <i className="fa-brands fa-instagram" style={{paddingRight :"10px", fontSize:"200%",marginTop:"15px"}}></i><br/>
+         <i className="fa-brands fa-whatsapp" style={{paddingRight :"10px", fontSize:"200%",marginTop:"15px"}}></i><br/>
+         <i className="fa-brands fa-tiktok" style={{paddingRight :"10px", fontSize:"200%",marginTop:"15px"}}></i><br/>
+         <i className="fa-brands fa-facebook" style={{paddingRight :"10px", fontSize:"200%",marginTop:"15px"}}></i><br/>
+          <ContactWatsapp/>
     </div>
  
             
          <div className="container">
       <ContactForm />
-       
+      
         </div> 
     </div>
   </div>

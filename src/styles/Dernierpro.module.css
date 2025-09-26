@@ -1,0 +1,75 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  /* gap: 5px; */
+  padding: 20px;
+  border-radius: 10px;
+  width: 94%;
+  margin-left: 90px;
+  
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  height: 400px;
+  width: 80%;
+  cursor: pointer;
+}
+
+.image {
+  
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.card:hover .image {
+  transform: scale(1.1);
+}
+
+.overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -100%;
+  background: linear-gradient(to top, rgba(0, 102, 255, 0.9), rgba(168, 0, 247, 0));
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  transition: bottom 0.4s ease;
+}
+
+.card:hover .overlay {
+  bottom: 0;
+}
+
+.overlay h3 {
+  margin: 0 0 5px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.overlay p {
+  font-size: 0.9rem;
+  margin: 0 0 10px;
+}
+
+.button {
+  display: inline-block;
+  padding: 6px 5px;
+  background: #fff;
+  color: #ff8c00;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+            color: #fff;
+            background: linear-gradient(purple);
+            transform: translateY(-2px) scale(1.05);
+            box-shadow: 0 10px 25px rgba(52, 152, 219, 0.3);
+}
+

@@ -1,5 +1,5 @@
 import '../styles/Header.css'
-
+import Recherche from "@/components/Recherche"
 
 export default function Header(){
   return(
@@ -10,7 +10,7 @@ export default function Header(){
       <div className="collapse navbar-collapse " id="navbarSupportedContent" >
         <ul className="navbar-nav mx-auto me-auto mb-2 mb-lg-0 ">
          <li className="nav-item ">
-           <a className="nav-link " aria-current="page" href="#home" vrole="button" > <i className="bi bi-house-door-fill" style={{paddingRight :"5px"}}></i>Home</a>
+           <a className="nav-link " aria-current="page" href="#home" vrole="button"  > <i className="bi bi-house-door-fill" style={{paddingRight :"5px"}}></i>Home</a>
           </li>
          <li className="nav-item">
             <a className="nav-link" href="#apropos" role="button"> <i className="bi bi-file-person-fill" style={{paddingRight :"5px"}}></i> A propos</a>
@@ -27,8 +27,9 @@ export default function Header(){
             
 
         <form className="d-flex" role="search">
-         <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"></input>
-          <button className="btn btn-outline-success" type="submit">Search</button>
+          <Recherche/>
+         {/* <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"></input>
+          <button className="btn btn-outline-success" type="submit">Search</button> */}
         </form>
       </div>
     </div>

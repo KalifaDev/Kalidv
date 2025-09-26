@@ -78,7 +78,9 @@
     
 }
 .Button-plus:hover{
-    background: blue;
-    box-shadow: 0 4px 15px rgba(78, 158, 255, 0.4);
-    transform: translateY(3px);
+    
+    background: linear-gradient(blue);
+    transform: translateY(-2px) scale(1.05);
+    box-shadow: 0 10px 25px rgba(52, 152, 219, 0.3);
+        
 }
