@@ -2,7 +2,6 @@ import { useState } from "react";
 import "../styles/Service.css";
 
 export default function Service() {
-  // 👉 tableau d'état pour gérer chaque carte
   const [expanded, setExpanded] = useState([false, false, false]);
 
   const toggleText = (index) => {
@@ -15,26 +14,63 @@ export default function Service() {
     {
       icon: "fa-solid fa-code",
       title: "Développement",
-      short:
-        <div>"Nous concevons des applications modernes, rapides et sécurisées,<br/> adaptées à vos besoins."</div>,
-      full:
-        <div>"Nous concevons des applications modernes, <br/>rapides et sécurisées, adaptées à vos besoins. <br/>De la vitrine en ligne aux plateformes complexes, <br/>nous assurons un design attrayant et une performance optimale<br/> pour offrir une expérience fluide à vos utilisateurs.",</div>
+      short: (
+        <>
+          Nous concevons des applications modernes, rapides et sécurisées,
+          <br /> adaptées à vos besoins.
+        </>
+      ),
+      full: (
+        <>
+          Nous concevons des applications modernes,
+          <br /> rapides et sécurisées, adaptées à vos besoins.
+          <br /> De la vitrine en ligne aux plateformes complexes,
+          <br /> nous assurons un design attrayant et une performance optimale
+          <br /> pour offrir une expérience fluide à vos utilisateurs.
+        </>
+      ),
     },
     {
       icon: "fa-solid fa-dna",
       title: "Solutions Personnalisées",
-      short:
-        <div>"Chaque projet est unique. Nous analysons vos objectifs et mettons<br/> en place des solutions sur mesure."</div>,
-      full:
-        <div>"Chaque projet est unique. Nous analysons vos<br/> objectifs et mettons en place des solutions sur mesure : intégration de nouvelles<br/> fonctionnalités, automatisation des processus, optimisation de vos<br/> outils existants. Notre priorité est de transformer vos idées en résultats concrets."</div>,
+      short: (
+        <>
+          Chaque projet est unique. Nous analysons vos objectifs et mettons
+          <br /> en place des solutions sur mesure.
+        </>
+      ),
+      full: (
+        <>
+          Chaque projet est unique. Nous analysons vos
+          <br /> objectifs et mettons en place des solutions sur mesure :
+          intégration de nouvelles
+          <br /> fonctionnalités, automatisation des processus, optimisation de
+          vos
+          <br /> outils existants. Notre priorité est de transformer vos idées
+          en résultats concrets.
+        </>
+      ),
     },
     {
       icon: "fa-solid fa-people-arrows",
       title: "Accompagnement et Support",
-      short:
-        <div>"Nous ne nous arrêtons pas au développement. Nous vous accompagnons<br/>dans le déploiement et la maintenance."</div>,
-      full:
-        <div>Nous ne nous arrêtons pas au développement.<br/> Nous vous accompagnons dans le déploiement,la maintenance et l'évolution<br/> de vos projets, avec un support réactif et des conseils stratégiques<br/> pour garantir la réussite à long terme <br/>de votre activité.</div>,
+      short: (
+        <>
+          Nous ne nous arrêtons pas au développement. Nous vous accompagnons
+          <br /> dans le déploiement et la maintenance.
+        </>
+      ),
+      full: (
+        <>
+          Nous ne nous arrêtons pas au développement.
+          <br /> Nous vous accompagnons dans le déploiement, la maintenance et
+          l'évolution
+          <br /> de vos projets, avec un support réactif et des conseils
+          stratégiques
+          <br /> pour garantir la réussite à long terme
+          <br /> de votre activité.
+        </>
+      ),
     },
   ];
 
@@ -60,7 +96,10 @@ export default function Service() {
           <div className="list-service">
             {services.map((s, i) => (
               <li key={i} type="none" className="dernier-conteneur">
-                <div style={{ textAlign: "center" }} className="service-descrip">
+                <div
+                  style={{ textAlign: "center" }}
+                  className="service-descrip"
+                >
                   <i
                     className={s.icon}
                     style={{ fontSize: "60px", color: "blue" }}
@@ -75,7 +114,6 @@ export default function Service() {
                     {s.title}
                   </h1>
 
-                  {/* ✅ Affichage conditionnel */}
                   <p style={{ fontFamily: "Quicksand" }}>
                     {expanded[i] ? s.full : s.short}
                   </p>

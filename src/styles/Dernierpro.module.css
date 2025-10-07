@@ -57,10 +57,10 @@
 
 .button {
   display: inline-block;
-  padding: 6px 5px;
+  padding: 10px 20px;
   background: #fff;
   color: #ff8c00;
-  border-radius: 10px;
+  border-radius: 5px;
   text-decoration: none;
   font-weight: bold;
   transition: all 0.3s ease;

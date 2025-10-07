@@ -16,7 +16,7 @@ export default function ContactForm() {
     const res = await fetch("/api/messages", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(form)
+      body: JSON.stringify(form),
     });
 
     if (res.ok) {
@@ -28,48 +28,48 @@ export default function ContactForm() {
   };
 
   return (
-
-    <form onSubmit={handleSubmit} class="form-row">
-
-     <input 
+    <form onSubmit={handleSubmit} className="form-row">
+      <input 
         type="text" 
         name="nom"
         placeholder="Nom" 
         required
         value={form.nom}
         onChange={handleChange}
-        style={{ width: "48%",marginTop:"5%", }}
-     />
-    <input 
+        style={{ width: "48%", marginTop: "5%" }}
+      />
+      <input 
         type="text" 
         name="prenom"
         placeholder="Prénom" 
+        required
         value={form.prenom}
         onChange={handleChange}
-        required
-        style={{ width: "49%",marginTop:"5%", }}
-    /><br/>
-    <input 
+        style={{ width: "49%", marginTop: "5%" }}
+      /><br/>
+      <input 
         name="email"
         type="email"
         placeholder="Email"
+        required
         value={form.email}
         onChange={handleChange}
+        style={{ width: "100%", marginTop: "5%" }}
+      /><br/>
+      <textarea 
+        className="Arealtext"  
+        style={{ width: "100%", height: "100px", marginBottom: "10px", marginTop: "5%" }} 
+        name="contenu"
+        placeholder="Votre message"
         required
-        style={{ width: "100%",marginTop:"5%"}}
-    /><br/>
-    <textarea 
-    className="Arealtext"  
-    style={{ width: "100%", height: "100px", marginBottom: "10px", marginTop:"5%"}} 
-    name="contenu"
-    placeholder="Votre message"
-    value={form.contenu}
-    onChange={handleChange}
-    required
-    /><br/>
-     <button  className="Areabutton" type="submit"><i class="fa-solid fa-paper-plane" style={{paddingRight :"10px", fontSize:"80%",marginTop:"8px"}}></i>Envoyer</button> 
-     <p>{status}</p>
+        value={form.contenu}
+        onChange={handleChange}
+      /><br/>
+      <button className="Areabutton" type="submit">
+        <i className="fa-solid fa-paper-plane" style={{ paddingRight: "10px", fontSize: "80%", marginTop: "8px" }}></i>
+        Envoyer
+      </button> 
+      <p>{status}</p>
     </form>
-   
   );
 }

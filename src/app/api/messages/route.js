@@ -1,17 +1,15 @@
-export const runtime = 'nodejs';
-import { NextResponse } from 'next/server'
-import { PrismaClient } from '@prisma/client'
-const prisma = new PrismaClient()
+import { connectToDatabase } from "@/lib/mongodb";
+import Message from "@/Models/Message";
 
 export async function POST(req) {
   try {
-    const { nom, prenom, email, contenu } = await req.json()
-    const message = await prisma.message.create({
-      data: { nom, prenom, email, contenu }
-    })
-    return NextResponse.json({ success: true, message})
+    const data = await req.json();
+    await connectToDatabase();
+
+    const newMessage = await Message.create(data);
+    return new Response(JSON.stringify(newMessage), { status: 201 });
   } catch (error) {
-    console.error(error)
-    return NextResponse.json({ success: false, error: 'Erreur serveur' }, { status: 500 })
+    console.error("Erreur :", error);
+    return new Response(JSON.stringify({ error: "Erreur lors de l’envoi" }), { status: 500 });
   }
 }

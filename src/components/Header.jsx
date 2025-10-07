@@ -4,6 +4,8 @@ import Recherche from "@/components/Recherche"
 export default function Header(){
   return(
     <header>
+
+
  <nav className="navbar navbar-expand-lg bg-body-tertiary fixed-top">
     <div className="container-fluid">
       <img src='IMG_1755(1).PNG'></img>

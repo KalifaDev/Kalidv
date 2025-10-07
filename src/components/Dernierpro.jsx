@@ -72,7 +72,9 @@ export default function Dernierpro() {
             <div className={styles.overlay}>
               <h3>{p.title}</h3>
               <p>{p.description}</p>
-              <PhotoModal imageUrl={p.img} buttonText="Voir la photo" />
+              <PhotoModal imageUrl={p.img}  buttonText={
+            <i className="fa-solid fa-right-to-bracket fa-beat-fade" style={{ fontSize: "20px" }}></i>
+                     } />
             </div>
           </div>
         ))}
